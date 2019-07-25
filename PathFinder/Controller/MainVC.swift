@@ -12,7 +12,7 @@ class MainVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("run")
+    print("run and run")
   }
 
 
