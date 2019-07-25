@@ -1,5 +1,5 @@
 //
-//  TassData.swift
+//  FuryData.swift
 //  PathFinder
 //
 //  Created by Fury on 25/07/2019.

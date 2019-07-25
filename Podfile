@@ -2,9 +2,9 @@
 # platform :ios, '9.0'
 
 target 'PathFinder' do
-  # Comment the next line if you don't want to use dynamic frameworks
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'Alamofire'

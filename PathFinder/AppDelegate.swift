@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PathFinder
 //
-//  Created by hyeoktae kwon on 2019/07/25.
-//  Copyright © 2019 hyeoktae kwon. All rights reserved.
+//  Created by Fury on 25/07/2019.
+//  Copyright © 2019 Fury. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
