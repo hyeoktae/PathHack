@@ -62,7 +62,6 @@
 				980CD651A48912706F09417D /* Pods-PathFinder.debug.xcconfig */,
 				F8C5F767E0F488B1D750D645 /* Pods-PathFinder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,12 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				CF09E8B522E9F10900B43066 /* AppDelegate.swift */,
+				CF09E8C122E9F10A00B43066 /* Info.plist */,
 				CF09E8CC22E9FAD600B43066 /* Controller */,
 				CF09E8CB22E9FAD300B43066 /* View */,
 				CF09E8CA22E9FACE00B43066 /* APICenter */,
 				CF09E8D222E9FB0700B43066 /* Data */,
 				CF09E8C922E9FACA00B43066 /* Source */,
-				CF09E8C122E9F10A00B43066 /* Info.plist */,
 			);
 			path = PathFinder;
 			sourceTree = "<group>";
