@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMaps
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
+    GMSServices.provideAPIKey("AIzaSyAkwUi_qy_5ygUj5yU4EwTL0pyIEUUh1u0")
+    
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.backgroundColor = .white
     window?.rootViewController = MainVC()
     window?.makeKeyAndVisible()
+    
+    FirebaseApp.configure()
     
     return true
   }

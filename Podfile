@@ -8,6 +8,9 @@ target 'PathFinder' do
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'Alamofire'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Firebase/Analytics'
 
   # Pods for PathFinder
 

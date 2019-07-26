@@ -17,6 +17,7 @@
 		CF09E8D422E9FB1600B43066 /* TassData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8D322E9FB1600B43066 /* TassData.swift */; };
 		CF09E8D622E9FB1C00B43066 /* FuryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8D522E9FB1C00B43066 /* FuryData.swift */; };
 		CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8D722E9FB2900B43066 /* UpsData.swift */; };
+		CF09E8DB22EAE77000B43066 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CF09E8D322E9FB1600B43066 /* TassData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TassData.swift; sourceTree = "<group>"; };
 		CF09E8D522E9FB1C00B43066 /* FuryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuryData.swift; sourceTree = "<group>"; };
 		CF09E8D722E9FB2900B43066 /* UpsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpsData.swift; sourceTree = "<group>"; };
+		CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D6DAF62212DC22FC5BBD7E33 /* Pods_PathFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C5F767E0F488B1D750D645 /* Pods-PathFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.release.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			children = (
 				CF09E8B522E9F10900B43066 /* AppDelegate.swift */,
 				CF09E8C122E9F10A00B43066 /* Info.plist */,
+				CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */,
 				CF09E8CC22E9FAD600B43066 /* Controller */,
 				CF09E8CB22E9FAD300B43066 /* View */,
 				CF09E8CA22E9FACE00B43066 /* APICenter */,
@@ -152,6 +155,7 @@
 				CF09E8AF22E9F10900B43066 /* Frameworks */,
 				CF09E8B022E9F10900B43066 /* Resources */,
 				153307B84E6CB81434DF3043 /* [CP] Embed Pods Frameworks */,
+				AF2606C96CE47E3B42895FBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +206,7 @@
 			files = (
 				CF09E8C022E9F10A00B43066 /* LaunchScreen.storyboard in Resources */,
 				CF09E8BD22E9F10A00B43066 /* Assets.xcassets in Resources */,
+				CF09E8DB22EAE77000B43066 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,20 +245,48 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF2606C96CE47E3B42895FBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
