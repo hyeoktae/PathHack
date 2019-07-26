@@ -32,6 +32,8 @@ class DetailCommunityCell: UITableViewCell {
   }
   
   private func configure() {
+    self.selectionStyle = .none
+    
     communityButton.setTitle("해당 사건 커뮤니티", for: .normal)
     communityButton.setTitleColor(.white, for: .normal)
     communityButton.backgroundColor = .darkGray

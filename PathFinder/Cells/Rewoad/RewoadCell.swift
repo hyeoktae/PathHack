@@ -41,9 +41,9 @@ class RewoadCell: UICollectionViewCell {
   
   func setting(data: Store) {
     titleLabel.text = data.commpany
-    imageView.image = UIImage(named: "icecream")
+    imageView.image = UIImage(named: data.imageName)
     detailLalel.text = data.detail
-    appPointLabel.text = String(data.appPoint)
+    appPointLabel.text = String(data.appPoint) + "  Point"
   }
   
   private func configure() {
@@ -52,6 +52,7 @@ class RewoadCell: UICollectionViewCell {
     contentView.backgroundColor = .white
     
     titleLabel.textAlignment = .center
+    titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
     contentView.addSubview(titleLabel)
     
     contentView.addSubview(imageView)
@@ -60,6 +61,8 @@ class RewoadCell: UICollectionViewCell {
     contentView.addSubview(detailLalel)
     
     appPointLabel.textAlignment = .center
+    appPointLabel.textColor = .white
+    appPointLabel.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
     contentView.addSubview(appPointLabel)
   }
   
