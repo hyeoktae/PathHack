@@ -40,6 +40,7 @@ class MyPageVC: UIViewController {
     view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     
     baseView.backgroundColor = .white
+    baseView.layer.cornerRadius = 10
     view.addSubview(baseView)
     
     idView.backgroundColor = .white

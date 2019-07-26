@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 struct Store {
   let commpany: String
   let detail: String
   let appPoint: Int
+  let imageName: String
 }
 
 class RewordStoreVC: UIViewController {
@@ -21,13 +23,7 @@ class RewordStoreVC: UIViewController {
   private var cellHeight: CGFloat = 0
   private let pageControl = UIPageControl()
   
-  var data = [
-    Store(commpany: "배스킨라빈스", detail: "닐라닐라 바닐라", appPoint: 100),
-    Store(commpany: "배스킨라빈스", detail: "닐라닐라 바닐라", appPoint: 100),
-    Store(commpany: "배스킨라빈스", detail: "닐라닐라 바닐라", appPoint: 100),
-    Store(commpany: "배스킨라빈스", detail: "닐라닐라 바닐라", appPoint: 100),
-    Store(commpany: "배스킨라빈스", detail: "닐라닐라 바닐라", appPoint: 100),
-  ]
+  var storeData = [Store]()
   
   private var groupCount = 0 {
     willSet {
@@ -41,6 +37,31 @@ class RewordStoreVC: UIViewController {
     navigationSet()
     configure()
     autoLayout()
+    getStoreDatas()
+  }
+  
+  private func getStoreDatas() {
+    let db = Firestore.firestore()
+    db.collection("Store").getDocuments { (querySnapshot, err) in
+      if let err = err {
+        print("Error getting documents: \(err)")
+      } else {
+        for document in querySnapshot!.documents {
+          
+          
+          let data = Store(
+            commpany: document["company"] as! String,
+            detail: document["detail"] as! String,
+            appPoint: document["appPoint"] as! Int,
+            imageName: document["image"] as! String
+          )
+          self.storeData.append(data)
+        }
+        
+        self.collectionView.reloadData()
+        
+      }
+    }
   }
   
   private var layoutState = true
@@ -81,7 +102,7 @@ class RewordStoreVC: UIViewController {
     pageControl.currentPage = 0
     pageControl.currentPageIndicatorTintColor = .darkGray
     pageControl.pageIndicatorTintColor = UIColor.darkGray.withAlphaComponent(0.2)
-    pageControl.numberOfPages = data.count
+    pageControl.numberOfPages = storeData.count
     view.addSubview(pageControl)
   }
   
@@ -119,13 +140,13 @@ class RewordStoreVC: UIViewController {
 
 extension RewordStoreVC: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return data.count
+    return storeData.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RewoadCell.identifier, for: indexPath) as! RewoadCell
     
-    cell.setting(data: data[indexPath.row])
+    cell.setting(data: storeData[indexPath.row])
     
     return cell
   }

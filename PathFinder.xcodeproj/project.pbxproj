@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */; };
 		4F3832E622EB3BD900A2EE99 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */; };
 		4F3832EB22EB586000A2EE99 /* RewardStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */; };
+		4F7A00C922EBA5E600FA478E /* MyPageContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A00C822EBA5E600FA478E /* MyPageContentsVC.swift */; };
 		4F8B4CDF22EB9A9C0098865D /* RewoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B4CDE22EB9A9C0098865D /* RewoadCell.swift */; };
 		CF09E8B622E9F10900B43066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B522E9F10900B43066 /* AppDelegate.swift */; };
 		CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B722E9F10900B43066 /* MainVC.swift */; };
@@ -29,10 +30,10 @@
 		CF09E8DB22EAE77000B43066 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */; };
 		CF09E8DD22EAED2500B43066 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8DC22EAED2500B43066 /* MapVC.swift */; };
 		CF09E8DF22EAED3200B43066 /* MapDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8DE22EAED3200B43066 /* MapDetailVC.swift */; };
-		CF09E8E122EAED4300B43066 /* CompareFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E022EAED4300B43066 /* CompareFaceVC.swift */; };
+		CF09E8E122EAED4300B43066 /* CompareImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E022EAED4300B43066 /* CompareImageVC.swift */; };
 		CF09E8E322EAED5100B43066 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E222EAED5100B43066 /* MapView.swift */; };
 		CF09E8E522EAED5B00B43066 /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E422EAED5B00B43066 /* MapDetailView.swift */; };
-		CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E622EAED6500B43066 /* CompareFaceView.swift */; };
+		CF09E8E722EAED6500B43066 /* CompareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E622EAED6500B43066 /* CompareImageView.swift */; };
 		CF09E8EA22EAF12200B43066 /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E922EAF12200B43066 /* CustomTabbarView.swift */; };
 		CF09E8EC22EAF1B300B43066 /* QuickReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */; };
 		CF09E8EE22EAF24C00B43066 /* RewordStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */; };
@@ -54,6 +55,7 @@
 		4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreCell.swift; sourceTree = "<group>"; };
+		4F7A00C822EBA5E600FA478E /* MyPageContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageContentsVC.swift; sourceTree = "<group>"; };
 		4F8B4CDE22EB9A9C0098865D /* RewoadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewoadCell.swift; sourceTree = "<group>"; };
 		980CD651A48912706F09417D /* Pods-PathFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.debug.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		CF09E8B222E9F10900B43066 /* PathFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,10 +72,10 @@
 		CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF09E8DC22EAED2500B43066 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		CF09E8DE22EAED3200B43066 /* MapDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailVC.swift; sourceTree = "<group>"; };
-		CF09E8E022EAED4300B43066 /* CompareFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFaceVC.swift; sourceTree = "<group>"; };
+		CF09E8E022EAED4300B43066 /* CompareImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareImageVC.swift; sourceTree = "<group>"; };
 		CF09E8E222EAED5100B43066 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CF09E8E422EAED5B00B43066 /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
-		CF09E8E622EAED6500B43066 /* CompareFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFaceView.swift; sourceTree = "<group>"; };
+		CF09E8E622EAED6500B43066 /* CompareImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareImageView.swift; sourceTree = "<group>"; };
 		CF09E8E922EAF12200B43066 /* CustomTabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
 		CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickReportVC.swift; sourceTree = "<group>"; };
 		CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewordStoreVC.swift; sourceTree = "<group>"; };
@@ -198,7 +200,7 @@
 				CF09E8E222EAED5100B43066 /* MapView.swift */,
 				CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */,
 				CF09E8E422EAED5B00B43066 /* MapDetailView.swift */,
-				CF09E8E622EAED6500B43066 /* CompareFaceView.swift */,
+				CF09E8E622EAED6500B43066 /* CompareImageView.swift */,
 				CF09E8F122EAF28300B43066 /* QuickReportView.swift */,
 				CF09E8F322EAF29100B43066 /* RewordStoreView.swift */,
 			);
@@ -212,11 +214,12 @@
 				CF09E8B722E9F10900B43066 /* MainVC.swift */,
 				CF09E8DC22EAED2500B43066 /* MapVC.swift */,
 				CF09E8DE22EAED3200B43066 /* MapDetailVC.swift */,
-				CF09E8E022EAED4300B43066 /* CompareFaceVC.swift */,
+				CF09E8E022EAED4300B43066 /* CompareImageVC.swift */,
 				CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */,
 				CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */,
 				CF09E8EF22EAF26500B43066 /* MyPageVC.swift */,
 				4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */,
+				4F7A00C822EBA5E600FA478E /* MyPageContentsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,36 +367,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -406,18 +384,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,14 +410,16 @@
 				4F3832E222EB36B000A2EE99 /* DetailCommunityCell.swift in Sources */,
 				CF09E91022EB277A00B43066 /* GoogleMapPinView.swift in Sources */,
 				CF09E8D422E9FB1600B43066 /* TassData.swift in Sources */,
-				CF09E8E122EAED4300B43066 /* CompareFaceVC.swift in Sources */,
+				CF09E8E122EAED4300B43066 /* CompareImageVC.swift in Sources */,
 				4F3832DE22EB366900A2EE99 /* DetailType2Cell.swift in Sources */,
 				CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */,
 				4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */,
 				4F3832E622EB3BD900A2EE99 /* CommunityCell.swift in Sources */,
 				CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */,
 				CF09E8E322EAED5100B43066 /* MapView.swift in Sources */,
-				CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */,
+				CF09E8E722EAED6500B43066 /* CompareImageView.swift in Sources */,
+				CF09E8E722EAED6500B43066 /* CompareImageView.swift in Sources */,
+				4F7A00C922EBA5E600FA478E /* MyPageContentsVC.swift in Sources */,
 				CF09E91222EB462100B43066 /* DataProvider.swift in Sources */,
 				CF09E8D122E9FB0100B43066 /* APICenter.swift in Sources */,
 				CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */,
@@ -602,7 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

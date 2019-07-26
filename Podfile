@@ -6,13 +6,12 @@ target 'PathFinder' do
   use_frameworks!
   
   pod 'SnapKit'
-  pod 'Kingfisher'
   pod 'Alamofire'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-  pod 'Firebase/Storage'
+
   # Pods for PathFinder
 
 end

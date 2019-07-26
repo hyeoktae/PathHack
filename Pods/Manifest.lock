@@ -14,9 +14,6 @@ PODS:
   - Firebase/Firestore (6.5.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.4.2)
-  - Firebase/Storage (6.5.0):
-    - Firebase/CoreOnly
-    - FirebaseStorage (~> 3.4.0)
   - FirebaseAnalytics (6.0.4):
     - FirebaseCore (~> 6.1)
     - FirebaseInstanceID (~> 4.2)
@@ -49,10 +46,6 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
-  - FirebaseStorage (3.4.0):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 6.0)
-    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (6.0.4):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -100,8 +93,6 @@ PODS:
     - gRPC-Core/Interface (= 1.21.0)
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
-  - GTMSessionFetcher/Core (1.2.2)
-  - Kingfisher (5.7.0)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -115,10 +106,8 @@ DEPENDENCIES:
   - Alamofire
   - Firebase/Core
   - Firebase/Firestore
-  - Firebase/Storage
   - GoogleMaps
   - GooglePlaces
-  - Kingfisher
   - SnapKit
 
 SPEC REPOS:
@@ -131,15 +120,12 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseFirestore
     - FirebaseInstanceID
-    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleMaps
     - GooglePlaces
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
-    - GTMSessionFetcher
-    - Kingfisher
     - leveldb-library
     - nanopb
     - Protobuf
@@ -154,20 +140,17 @@ SPEC CHECKSUMS:
   FirebaseCore: aecf02fb2274ec361b9bebeac112f5daa18273bd
   FirebaseFirestore: 41a035642eb017fc7206318985501626993840bd
   FirebaseInstanceID: 662b8108a09fe9ed01aafdedba100fde8536b0f6
-  FirebaseStorage: 618dd8fd886b30adf6e5d1915b1f5c18cb5c3944
   GoogleAppMeasurement: 183bd916af7f80deb67c01888368f1108d641832
   GoogleMaps: 5046d7edfe381c1a0b20fdaf293915a375c3122b
   GooglePlaces: 41bc2e480816b1234a48f4bec92e1c886f37cfe1
   GoogleUtilities: d2b0e277a95962e09bb27f5cd42f5f0b6a506c7d
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
-  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
-  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: d7750927868f9949cff9932a69813fb0a42464f4
+PODFILE CHECKSUM: 87358a23da4a99c246f0b14a8cdb9546feba6da0
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5

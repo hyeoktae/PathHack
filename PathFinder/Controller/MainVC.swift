@@ -9,10 +9,16 @@
 import UIKit
 import GoogleMaps
 
+protocol MainVCDelegate: class {
+  func openCamera()
+}
+
 class MainVC: UIViewController {
   
+  weak var delegate: MainVCDelegate?
+  
   var mapVC: MapVC?
-  var compareFaceVC: CompareFaceVC?
+  var compareImageVC: CompareImageVC?
   var quickReportVC: QuickReportVC?
   var rewordStoreVC: RewordStoreVC?
   var myPageVC: MyPageVC?
@@ -24,10 +30,12 @@ class MainVC: UIViewController {
     super.viewDidLoad()
     
     mapVC = MapVC()
-    compareFaceVC = CompareFaceVC()
+    compareImageVC = CompareImageVC()
     quickReportVC = QuickReportVC()
     rewordStoreVC = RewordStoreVC()
     myPageVC = MyPageVC()
+    
+    self.delegate = compareImageVC
     
     makeViewList()
     linkTargetAction()
@@ -45,6 +53,9 @@ class MainVC: UIViewController {
     checkView()
     prevIndex = sender.tag
     moveView(sender.tag)
+    if sender.tag == 1 {
+      delegate?.openCamera()
+    }
   }
   
   private func checkView() {
@@ -87,7 +98,7 @@ class MainVC: UIViewController {
   }
   
   func makeViewList() {
-    guard let views = [mapVC, compareFaceVC, rewordStoreVC, myPageVC] as? [UIViewController] else {
+    guard let views = [mapVC, compareImageVC, quickReportVC, myPageVC, rewordStoreVC] as? [UIViewController] else {
       return
     }
     
