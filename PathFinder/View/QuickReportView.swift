@@ -10,10 +10,11 @@ import UIKit
 
 protocol QuickReportViewDelegate: class {
   func touchUpCancelButton()
+  func touchUpAllButton(_ sender: UIButton)
 }
 
 class QuickReportView: UIView {
-    var delegate: QuickReportViewDelegate?
+  var delegate: QuickReportViewDelegate?
   
   let topView: UIView = {
     let view = UIView()
@@ -26,9 +27,9 @@ class QuickReportView: UIView {
   private let topViewText: UILabel = {
     let label = UILabel()
     label.text = """
-                허위신고(전화, 문자)를 할 경우에는
-                법에 의해 처벌을 받을 수 있습니다.
-                """
+    허위신고(전화, 문자)를 할 경우에는
+    법에 의해 처벌을 받을 수 있습니다.
+    """
     label.textColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
     label.textAlignment = .center
     label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
@@ -54,6 +55,7 @@ class QuickReportView: UIView {
   let kidnapButton: UIButton = {
     let button = UIButton()
     button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    button.tag = 0
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setImage(#imageLiteral(resourceName: "kidnap"), for: .normal)
     return button
@@ -72,6 +74,8 @@ class QuickReportView: UIView {
   let distressButton: UIButton = {
     let button = UIButton()
     button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    button.tag = 1
+    button.addTarget(self, action: #selector(touchUpAllButton(_:)), for: .touchUpInside)
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setImage(#imageLiteral(resourceName: "distress"), for: .normal)
     return button
@@ -90,6 +94,8 @@ class QuickReportView: UIView {
   let incarcerationButton: UIButton = {
     let button = UIButton()
     button.setImage(#imageLiteral(resourceName: "incarceration"), for: .normal)
+    button.tag = 2
+    button.addTarget(self, action: #selector(touchUpAllButton(_:)), for: .touchUpInside)
     button.translatesAutoresizingMaskIntoConstraints = false
     button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     return button
@@ -108,6 +114,8 @@ class QuickReportView: UIView {
   let violenceButton: UIButton = {
     let button = UIButton()
     button.setImage(#imageLiteral(resourceName: "violence"), for: .normal)
+    button.tag = 3
+    button.addTarget(self, action: #selector(touchUpAllButton(_:)), for: .touchUpInside)
     button.translatesAutoresizingMaskIntoConstraints = false
     button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     return button
@@ -128,6 +136,7 @@ class QuickReportView: UIView {
     button.setTitle("112 전화", for:  .normal)
     button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
     button.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
+    button.addTarget(self, action: #selector(touchUpAllButton(_:)), for: .touchUpInside)
     button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
     button.translatesAutoresizingMaskIntoConstraints = false
     return button
@@ -146,8 +155,12 @@ class QuickReportView: UIView {
     policeCallButton.layer.cornerRadius = 20
   }
   
+  @objc private func touchUpAllButton(_ sender: UIButton) {
+    delegate?.touchUpAllButton(sender)
+  }
+  
   @objc private func touchUpCancelButton(_ sender: Any) {
-        delegate?.touchUpCancelButton()
+    delegate?.touchUpCancelButton()
   }
   
   private func setupProperties() {
@@ -184,7 +197,7 @@ class QuickReportView: UIView {
     kidnapText.topAnchor.constraint(equalTo: kidnapButton.bottomAnchor).isActive = true
     kidnapText.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor).isActive = true
     kidnapText.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
-//    kidnapText.heightAnchor.constraint(equalTo: kidnapButton.heightAnchor).isActive = true
+    //    kidnapText.heightAnchor.constraint(equalTo: kidnapButton.heightAnchor).isActive = true
     
     bottomView.addSubview(distressButton)
     distressButton.topAnchor.constraint(equalTo: bottomView.topAnchor).isActive = true
@@ -195,7 +208,7 @@ class QuickReportView: UIView {
     distressText.topAnchor.constraint(equalTo: distressButton.bottomAnchor).isActive = true
     distressText.leadingAnchor.constraint(equalTo: kidnapText.trailingAnchor).isActive = true
     distressText.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
-//    distressText.heightAnchor.constraint(equalTo: distressButton.heightAnchor).isActive = true
+    //    distressText.heightAnchor.constraint(equalTo: distressButton.heightAnchor).isActive = true
     
     bottomView.addSubview(incarcerationButton)
     incarcerationButton.topAnchor.constraint(equalTo: bottomView.topAnchor).isActive = true
@@ -206,7 +219,7 @@ class QuickReportView: UIView {
     incarcerationText.topAnchor.constraint(equalTo: incarcerationButton.bottomAnchor).isActive = true
     incarcerationText.leadingAnchor.constraint(equalTo: distressText.trailingAnchor).isActive = true
     incarcerationText.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
-//    incarcerationText.heightAnchor.constraint(equalTo: incarcerationButton.heightAnchor).isActive = true
+    //    incarcerationText.heightAnchor.constraint(equalTo: incarcerationButton.heightAnchor).isActive = true
     
     bottomView.addSubview(violenceButton)
     violenceButton.topAnchor.constraint(equalTo: bottomView.topAnchor).isActive = true
@@ -219,7 +232,7 @@ class QuickReportView: UIView {
     violenceText.leadingAnchor.constraint(equalTo: incarcerationText.trailingAnchor).isActive = true
     violenceText.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor).isActive = true
     violenceText.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
-//    violenceText.heightAnchor.constraint(equalTo: violenceButton.heightAnchor).isActive = true
+    //    violenceText.heightAnchor.constraint(equalTo: violenceButton.heightAnchor).isActive = true
     
     self.addSubview(policeCallButton)
     policeCallButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true

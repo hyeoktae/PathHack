@@ -135,12 +135,17 @@ class CustomTabbarView: UIView {
   }
   
   func makeLabelTitle() {
+    leftStack.firstButton.setImage(#imageLiteral(resourceName: "home"), for: .normal)
+//    leftStack.firstButton.setTitle("홈", for: .normal)
     
-    leftStack.firstButton.setTitle("홈", for: .normal)
-    leftStack.secondButton.setTitle("페이스", for: .normal)
+    leftStack.secondButton.setImage(#imageLiteral(resourceName: "face"), for: .normal)
+//    leftStack.secondButton.setTitle("페이스", for: .normal)
     
-    rightStack.firstButton.setTitle("스토어", for: .normal)
-    rightStack.secondButton.setTitle("나의페이지", for: .normal)
+    rightStack.firstButton.setImage(#imageLiteral(resourceName: "store"), for: .normal)
+//    rightStack.firstButton.setTitle("스토어", for: .normal)
+    
+    rightStack.secondButton.setImage(#imageLiteral(resourceName: "mypage"), for: .normal)
+//    rightStack.secondButton.setTitle("나의페이지", for: .normal)
   }
   
   func linkTagNumber() {

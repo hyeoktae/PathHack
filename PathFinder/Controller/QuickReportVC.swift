@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class QuickReportVC: UIViewController {
   
@@ -64,7 +65,56 @@ class QuickReportVC: UIViewController {
 }
 
 extension QuickReportVC: QuickReportViewDelegate {
+  func touchUpAllButton(_ sender: UIButton) {
+    switch sender.tag {
+    case 0:
+      if MFMessageComposeViewController.canSendText() {
+        let recipients: [String] = ["01062658667"]
+        let messageontroller = MFMessageComposeViewController()
+        messageontroller.messageComposeDelegate = self
+        messageontroller.recipients = recipients
+        messageontroller.body = "텍스트"
+        self.present(messageontroller, animated: true, completion: nil)
+      }
+    case 1:
+      if MFMessageComposeViewController.canSendText() {
+        let recipients: [String] = ["01062658667"]
+        let messageontroller = MFMessageComposeViewController()
+        messageontroller.messageComposeDelegate = self
+        messageontroller.recipients = recipients
+        messageontroller.body = "텍스트"
+        self.present(messageontroller, animated: true, completion: nil)
+      }
+    case 2:
+      if MFMessageComposeViewController.canSendText() {
+        let recipients: [String] = ["01062658667"]
+        let messageontroller = MFMessageComposeViewController()
+        messageontroller.messageComposeDelegate = self
+        messageontroller.recipients = recipients
+        messageontroller.body = "텍스트"
+        self.present(messageontroller, animated: true, completion: nil)
+      }
+    case 3:
+      if MFMessageComposeViewController.canSendText() {
+        let recipients: [String] = ["01062658667"]
+        let messageontroller = MFMessageComposeViewController()
+        messageontroller.messageComposeDelegate = self
+        messageontroller.recipients = recipients
+        messageontroller.body = "텍스트"
+        self.present(messageontroller, animated: true, completion: nil)
+      }
+    default:
+      break
+    }
+  }
+  
   func touchUpCancelButton() {
     startAnimations(isCancel: true)
+  }
+}
+
+extension QuickReportVC: MFMessageComposeViewControllerDelegate {
+  func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+    controller.dismiss(animated: true, completion: nil)
   }
 }
