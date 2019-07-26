@@ -32,6 +32,13 @@
 		CF09E8F422EAF29100B43066 /* RewordStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F322EAF29100B43066 /* RewordStoreView.swift */; };
 		CF09E8F622EAF29800B43066 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F522EAF29800B43066 /* MyPageView.swift */; };
 		CF09E8F822EB03C700B43066 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F722EB03C700B43066 /* SplashVC.swift */; };
+		CF09E90222EB183D00B43066 /* MyPageHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90122EB183D00B43066 /* MyPageHeaderCell.swift */; };
+		CF09E90422EB184C00B43066 /* MyPageOneContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90322EB184C00B43066 /* MyPageOneContentCell.swift */; };
+		CF09E90722EB18A300B43066 /* MyPageTwoContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90622EB18A300B43066 /* MyPageTwoContentCell.swift */; };
+		CF09E90922EB18AE00B43066 /* MyPageThreeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90822EB18AE00B43066 /* MyPageThreeContentCell.swift */; };
+		CF09E90B22EB18B700B43066 /* MyPageFourContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90A22EB18B700B43066 /* MyPageFourContentCell.swift */; };
+		CF09E90E22EB192900B43066 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90D22EB192900B43066 /* Color.swift */; };
+		CF09E91022EB277A00B43066 /* GoogleMapPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,13 @@
 		CF09E8F322EAF29100B43066 /* RewordStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewordStoreView.swift; sourceTree = "<group>"; };
 		CF09E8F522EAF29800B43066 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		CF09E8F722EB03C700B43066 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		CF09E90122EB183D00B43066 /* MyPageHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageHeaderCell.swift; sourceTree = "<group>"; };
+		CF09E90322EB184C00B43066 /* MyPageOneContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageOneContentCell.swift; sourceTree = "<group>"; };
+		CF09E90622EB18A300B43066 /* MyPageTwoContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTwoContentCell.swift; sourceTree = "<group>"; };
+		CF09E90822EB18AE00B43066 /* MyPageThreeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageThreeContentCell.swift; sourceTree = "<group>"; };
+		CF09E90A22EB18B700B43066 /* MyPageFourContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageFourContentCell.swift; sourceTree = "<group>"; };
+		CF09E90D22EB192900B43066 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapPinView.swift; sourceTree = "<group>"; };
 		D6DAF62212DC22FC5BBD7E33 /* Pods_PathFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C5F767E0F488B1D750D645 /* Pods-PathFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.release.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,9 +133,11 @@
 				CF09E8B522E9F10900B43066 /* AppDelegate.swift */,
 				CF09E8C122E9F10A00B43066 /* Info.plist */,
 				CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */,
+				CF09E90C22EB191C00B43066 /* Utill */,
 				CF09E8E822EAF10600B43066 /* CustomTabBar */,
 				CF09E8CC22E9FAD600B43066 /* Controller */,
 				CF09E8CB22E9FAD300B43066 /* View */,
+				CF09E8F922EB178B00B43066 /* Cells */,
 				CF09E8CA22E9FACE00B43066 /* APICenter */,
 				CF09E8D222E9FB0700B43066 /* Data */,
 				CF09E8C922E9FACA00B43066 /* Source */,
@@ -156,6 +172,7 @@
 				CF09E8F122EAF28300B43066 /* QuickReportView.swift */,
 				CF09E8F322EAF29100B43066 /* RewordStoreView.swift */,
 				CF09E8F522EAF29800B43066 /* MyPageView.swift */,
+				CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +208,34 @@
 				CF09E8E922EAF12200B43066 /* CustomTabbarView.swift */,
 			);
 			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		CF09E8F922EB178B00B43066 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF09E90022EB181300B43066 /* MyPageCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF09E90022EB181300B43066 /* MyPageCells */ = {
+			isa = PBXGroup;
+			children = (
+				CF09E90122EB183D00B43066 /* MyPageHeaderCell.swift */,
+				CF09E90322EB184C00B43066 /* MyPageOneContentCell.swift */,
+				CF09E90622EB18A300B43066 /* MyPageTwoContentCell.swift */,
+				CF09E90822EB18AE00B43066 /* MyPageThreeContentCell.swift */,
+				CF09E90A22EB18B700B43066 /* MyPageFourContentCell.swift */,
+			);
+			path = MyPageCells;
+			sourceTree = "<group>";
+		};
+		CF09E90C22EB191C00B43066 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				CF09E90D22EB192900B43066 /* Color.swift */,
+			);
+			path = Utill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +341,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -311,6 +357,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -358,16 +405,23 @@
 			files = (
 				CF09E8F022EAF26500B43066 /* MyPageVC.swift in Sources */,
 				CF09E8F422EAF29100B43066 /* RewordStoreView.swift in Sources */,
+				CF09E91022EB277A00B43066 /* GoogleMapPinView.swift in Sources */,
 				CF09E8D422E9FB1600B43066 /* TassData.swift in Sources */,
 				CF09E8E122EAED4300B43066 /* CompareFaceVC.swift in Sources */,
 				CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */,
+				CF09E90922EB18AE00B43066 /* MyPageThreeContentCell.swift in Sources */,
+				CF09E90722EB18A300B43066 /* MyPageTwoContentCell.swift in Sources */,
 				CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */,
 				CF09E8E322EAED5100B43066 /* MapView.swift in Sources */,
 				CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */,
+				CF09E90B22EB18B700B43066 /* MyPageFourContentCell.swift in Sources */,
+				CF09E90422EB184C00B43066 /* MyPageOneContentCell.swift in Sources */,
 				CF09E8D122E9FB0100B43066 /* APICenter.swift in Sources */,
+				CF09E90222EB183D00B43066 /* MyPageHeaderCell.swift in Sources */,
 				CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */,
 				CF09E8EE22EAF24C00B43066 /* RewordStoreVC.swift in Sources */,
 				CF09E8EC22EAF1B300B43066 /* QuickReportVC.swift in Sources */,
+				CF09E90E22EB192900B43066 /* Color.swift in Sources */,
 				CF09E8CF22E9FAF400B43066 /* MainView.swift in Sources */,
 				CF09E8DF22EAED3200B43066 /* MapDetailVC.swift in Sources */,
 				CF09E8DD22EAED2500B43066 /* MapVC.swift in Sources */,
@@ -516,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
