@@ -16,6 +16,7 @@
 		4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */; };
 		4F3832E622EB3BD900A2EE99 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */; };
 		4F3832EB22EB586000A2EE99 /* RewardStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */; };
+		4F7A00C922EBA5E600FA478E /* MyPageContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A00C822EBA5E600FA478E /* MyPageContentsVC.swift */; };
 		4F8B4CDF22EB9A9C0098865D /* RewoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8B4CDE22EB9A9C0098865D /* RewoadCell.swift */; };
 		CF09E8B622E9F10900B43066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B522E9F10900B43066 /* AppDelegate.swift */; };
 		CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B722E9F10900B43066 /* MainVC.swift */; };
@@ -54,6 +55,7 @@
 		4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreCell.swift; sourceTree = "<group>"; };
+		4F7A00C822EBA5E600FA478E /* MyPageContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageContentsVC.swift; sourceTree = "<group>"; };
 		4F8B4CDE22EB9A9C0098865D /* RewoadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewoadCell.swift; sourceTree = "<group>"; };
 		980CD651A48912706F09417D /* Pods-PathFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.debug.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		CF09E8B222E9F10900B43066 /* PathFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +219,7 @@
 				CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */,
 				CF09E8EF22EAF26500B43066 /* MyPageVC.swift */,
 				4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */,
+				4F7A00C822EBA5E600FA478E /* MyPageContentsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */,
 				CF09E8E322EAED5100B43066 /* MapView.swift in Sources */,
 				CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */,
+				4F7A00C922EBA5E600FA478E /* MyPageContentsVC.swift in Sources */,
 				CF09E91222EB462100B43066 /* DataProvider.swift in Sources */,
 				CF09E8D122E9FB0100B43066 /* APICenter.swift in Sources */,
 				CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */,
