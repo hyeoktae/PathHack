@@ -20,7 +20,7 @@ class MapView: UIView {
   private var markerArr: [GMSMarker] = []
   
   private var googleMapView: GMSMapView = {
-    let camera = GMSCameraPosition.camera(withLatitude: 35.154091, longitude: 129.0553, zoom: 18)
+    let camera = GMSCameraPosition.camera(withLatitude: 35.1575204, longitude: 129.0515812, zoom: 18)
     let gmsMapView = GMSMapView.map(withFrame: .zero, camera: camera)
     gmsMapView.mapType = .normal
     gmsMapView.translatesAutoresizingMaskIntoConstraints = false
