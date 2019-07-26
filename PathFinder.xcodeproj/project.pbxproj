@@ -18,6 +18,20 @@
 		CF09E8D622E9FB1C00B43066 /* FuryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8D522E9FB1C00B43066 /* FuryData.swift */; };
 		CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8D722E9FB2900B43066 /* UpsData.swift */; };
 		CF09E8DB22EAE77000B43066 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */; };
+		CF09E8DD22EAED2500B43066 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8DC22EAED2500B43066 /* MapVC.swift */; };
+		CF09E8DF22EAED3200B43066 /* MapDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8DE22EAED3200B43066 /* MapDetailVC.swift */; };
+		CF09E8E122EAED4300B43066 /* CompareFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E022EAED4300B43066 /* CompareFaceVC.swift */; };
+		CF09E8E322EAED5100B43066 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E222EAED5100B43066 /* MapView.swift */; };
+		CF09E8E522EAED5B00B43066 /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E422EAED5B00B43066 /* MapDetailView.swift */; };
+		CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E622EAED6500B43066 /* CompareFaceView.swift */; };
+		CF09E8EA22EAF12200B43066 /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8E922EAF12200B43066 /* CustomTabbarView.swift */; };
+		CF09E8EC22EAF1B300B43066 /* QuickReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */; };
+		CF09E8EE22EAF24C00B43066 /* RewordStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */; };
+		CF09E8F022EAF26500B43066 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8EF22EAF26500B43066 /* MyPageVC.swift */; };
+		CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F122EAF28300B43066 /* QuickReportView.swift */; };
+		CF09E8F422EAF29100B43066 /* RewordStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F322EAF29100B43066 /* RewordStoreView.swift */; };
+		CF09E8F622EAF29800B43066 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F522EAF29800B43066 /* MyPageView.swift */; };
+		CF09E8F822EB03C700B43066 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8F722EB03C700B43066 /* SplashVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +48,20 @@
 		CF09E8D522E9FB1C00B43066 /* FuryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuryData.swift; sourceTree = "<group>"; };
 		CF09E8D722E9FB2900B43066 /* UpsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpsData.swift; sourceTree = "<group>"; };
 		CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF09E8DC22EAED2500B43066 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		CF09E8DE22EAED3200B43066 /* MapDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailVC.swift; sourceTree = "<group>"; };
+		CF09E8E022EAED4300B43066 /* CompareFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFaceVC.swift; sourceTree = "<group>"; };
+		CF09E8E222EAED5100B43066 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CF09E8E422EAED5B00B43066 /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
+		CF09E8E622EAED6500B43066 /* CompareFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFaceView.swift; sourceTree = "<group>"; };
+		CF09E8E922EAF12200B43066 /* CustomTabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
+		CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickReportVC.swift; sourceTree = "<group>"; };
+		CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewordStoreVC.swift; sourceTree = "<group>"; };
+		CF09E8EF22EAF26500B43066 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		CF09E8F122EAF28300B43066 /* QuickReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickReportView.swift; sourceTree = "<group>"; };
+		CF09E8F322EAF29100B43066 /* RewordStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewordStoreView.swift; sourceTree = "<group>"; };
+		CF09E8F522EAF29800B43066 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		CF09E8F722EB03C700B43066 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		D6DAF62212DC22FC5BBD7E33 /* Pods_PathFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C5F767E0F488B1D750D645 /* Pods-PathFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.release.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +119,7 @@
 				CF09E8B522E9F10900B43066 /* AppDelegate.swift */,
 				CF09E8C122E9F10A00B43066 /* Info.plist */,
 				CF09E8DA22EAE77000B43066 /* GoogleService-Info.plist */,
+				CF09E8E822EAF10600B43066 /* CustomTabBar */,
 				CF09E8CC22E9FAD600B43066 /* Controller */,
 				CF09E8CB22E9FAD300B43066 /* View */,
 				CF09E8CA22E9FACE00B43066 /* APICenter */,
@@ -121,6 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				CF09E8CE22E9FAF400B43066 /* MainView.swift */,
+				CF09E8E222EAED5100B43066 /* MapView.swift */,
+				CF09E8E422EAED5B00B43066 /* MapDetailView.swift */,
+				CF09E8E622EAED6500B43066 /* CompareFaceView.swift */,
+				CF09E8F122EAF28300B43066 /* QuickReportView.swift */,
+				CF09E8F322EAF29100B43066 /* RewordStoreView.swift */,
+				CF09E8F522EAF29800B43066 /* MyPageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,7 +163,14 @@
 		CF09E8CC22E9FAD600B43066 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CF09E8F722EB03C700B43066 /* SplashVC.swift */,
 				CF09E8B722E9F10900B43066 /* MainVC.swift */,
+				CF09E8DC22EAED2500B43066 /* MapVC.swift */,
+				CF09E8DE22EAED3200B43066 /* MapDetailVC.swift */,
+				CF09E8E022EAED4300B43066 /* CompareFaceVC.swift */,
+				CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */,
+				CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */,
+				CF09E8EF22EAF26500B43066 /* MyPageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +183,14 @@
 				CF09E8D722E9FB2900B43066 /* UpsData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CF09E8E822EAF10600B43066 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CF09E8E922EAF12200B43066 /* CustomTabbarView.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +295,15 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PathFinder/Pods-PathFinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -255,9 +311,15 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,13 +358,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF09E8F022EAF26500B43066 /* MyPageVC.swift in Sources */,
+				CF09E8F422EAF29100B43066 /* RewordStoreView.swift in Sources */,
 				CF09E8D422E9FB1600B43066 /* TassData.swift in Sources */,
+				CF09E8E122EAED4300B43066 /* CompareFaceVC.swift in Sources */,
 				CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */,
+				CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */,
+				CF09E8E322EAED5100B43066 /* MapView.swift in Sources */,
+				CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */,
 				CF09E8D122E9FB0100B43066 /* APICenter.swift in Sources */,
 				CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */,
+				CF09E8EE22EAF24C00B43066 /* RewordStoreVC.swift in Sources */,
+				CF09E8EC22EAF1B300B43066 /* QuickReportVC.swift in Sources */,
 				CF09E8CF22E9FAF400B43066 /* MainView.swift in Sources */,
+				CF09E8DF22EAED3200B43066 /* MapDetailVC.swift in Sources */,
+				CF09E8DD22EAED2500B43066 /* MapVC.swift in Sources */,
 				CF09E8B622E9F10900B43066 /* AppDelegate.swift in Sources */,
+				CF09E8EA22EAF12200B43066 /* CustomTabbarView.swift in Sources */,
+				CF09E8F622EAF29800B43066 /* MyPageView.swift in Sources */,
+				CF09E8E522EAED5B00B43066 /* MapDetailView.swift in Sources */,
 				CF09E8D622E9FB1C00B43066 /* FuryData.swift in Sources */,
+				CF09E8F822EB03C700B43066 /* SplashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PathFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PathFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

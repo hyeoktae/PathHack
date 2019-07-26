@@ -10,7 +10,9 @@ target 'PathFinder' do
   pod 'Alamofire'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
   # Pods for PathFinder
 
