@@ -43,5 +43,6 @@ extension MapVC: MapViewDelegate {
     let mapDetailVC = MapDetailVC()
     mapDetailVC.data = crimeData
     mapDetailVC.documentID = documentValue
+    self.present(mapDetailVC, animated: false)
   }
 }
