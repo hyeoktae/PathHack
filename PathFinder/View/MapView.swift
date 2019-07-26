@@ -10,28 +10,36 @@ import UIKit
 import GoogleMaps
 
 class MapView: UIView {
+  
   private var googleMapView: GMSMapView = {
-    let camera = GMSCameraPosition.camera(withLatitude: 1.285, longitude: 103.848, zoom: 5)
+    let camera = GMSCameraPosition.camera(withLatitude: 35.154091, longitude: 129.0553, zoom: 18)
     let gmsMapView = GMSMapView.map(withFrame: .zero, camera: camera)
-    gmsMapView.mapType = .hybrid
+    gmsMapView.mapType = .normal
     gmsMapView.translatesAutoresizingMaskIntoConstraints = false
     return gmsMapView
   }()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-//    googleMapView.mapType = .hybrid
-//    googleMapView.mapType = .none
-//    googleMapView.mapType = .normal
-//    googleMapView.mapType = .satellite
-//    googleMapView.mapType = .terrain
+
     setupGoogleMapView()
     
-    let position = CLLocationCoordinate2D(latitude: 10, longitude: 10)
+    let position = CLLocationCoordinate2D(latitude: 35.154091, longitude: 129.0553)
     let marker = GMSMarker(position: position)
     marker.title = "Hello World"
     marker.map = googleMapView
     
+    let position2 = CLLocationCoordinate2D(latitude: 35.233968, longitude: 129.080685)
+    let marker2 = GMSMarker(position: position2)
+    marker2.title = "Hello World"
+    
+    marker2.map = googleMapView
+    
+    let position3 = CLLocationCoordinate2D(latitude: 35.160321, longitude: 129.055334)
+    let marker3 = GMSMarker(position: position3)
+    marker3.title = "Hello World"
+    
+    marker3.map = googleMapView
   }
   
   override func layoutSubviews() {

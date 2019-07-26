@@ -12,7 +12,7 @@ target 'PathFinder' do
   pod 'GooglePlaces'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-
+  pod 'Firebase/Storage'
   # Pods for PathFinder
 
 end
