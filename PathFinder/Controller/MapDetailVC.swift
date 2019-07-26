@@ -12,6 +12,8 @@ class MapDetailVC: UIViewController {
   private let shared = DataProvider.shared
   var documentID: String = ""
   
+  private let backButton = UIButton()
+  
   private let googleMap: MapDetailView = {
     let mapView = MapDetailView()
     mapView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,22 +27,10 @@ class MapDetailVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    navigationSet()
+    
     configure()
     autoLayout()
     googleMap.configureGoogleMapPosition(data)
-  }
-  
-  private func navigationSet() {
-    navigationItem.title = "상세정보"
-    navigationController?.navigationBar.shadowImage = UIImage()
-    navigationController?.navigationBar.barTintColor = .white
-    
-    navigationItem.leftBarButtonItem = UIBarButtonItem(title: "뒤로가기", style: .done, target: self, action: #selector(backButtonAction))
-  }
-  
-  @objc private func backButtonAction() {
-    presentingViewController?.dismiss(animated: true)
   }
   
   private func configure() {
@@ -54,6 +44,16 @@ class MapDetailVC: UIViewController {
     tableView.register(DetailType3Cell.self, forCellReuseIdentifier: DetailType3Cell.identifier)
     tableView.register(DetailCommunityCell.self, forCellReuseIdentifier: DetailCommunityCell.identifier)
     view.addSubview(tableView)
+    
+    backButton.setTitle("  뒤로가기  ", for: .normal)
+    backButton.setTitleColor(.white, for: .normal)
+    backButton.backgroundColor = .darkGray
+    backButton.layer.cornerRadius = 10
+    backButton.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
+  }
+  
+  @objc private func backButtonAction() {
+    presentingViewController?.dismiss(animated: true)
   }
   
   private struct Standard {
@@ -74,6 +74,11 @@ class MapDetailVC: UIViewController {
     tableView.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
     tableView.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
     tableView.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
+    
+    view.addSubview(backButton)
+    backButton.translatesAutoresizingMaskIntoConstraints = false
+    backButton.topAnchor.constraint(equalTo: guide.topAnchor, constant: 10).isActive = true
+    backButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 10).isActive = true
   }
 }
 
@@ -174,8 +179,13 @@ extension MapDetailVC: UITableViewDataSource {
 
 extension MapDetailVC: DetailCommunityCellDelegate {
   func CommunityButtonDidTap() {
-    let communityVC = CommunityVC()
     
-    navigationController?.pushViewController(communityVC, animated: true)
+    print("hi")
+    let communityVC = CommunityVC()
+    communityVC.documentID = documentID
+    
+    let navi = UINavigationController(rootViewController: communityVC)
+    
+    present(navi, animated: true)
   }
 }

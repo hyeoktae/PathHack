@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class CommunityVC: UIViewController {
   
   private let tableView = UITableView()
+  
+  var documentID: String = ""
+  
+  var data = [CommunityModel]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,12 +24,39 @@ class CommunityVC: UIViewController {
     navigationSet()
     configure()
     autoLayout()
+    getCrimeCommunityDatas()
+  }
+  
+  private func getCrimeCommunityDatas() {
+    let db = Firestore.firestore()
+    db.collection("Crime").document(documentID).collection("Community").getDocuments { (querySnapshot, err) in
+      if let err = err {
+        print("Error getting documents: \(err)")
+      } else {
+        for document in querySnapshot!.documents {
+          
+          let temp = CommunityModel(
+            title: document["title"] as! String,
+            contents: document["contents"] as! String
+            )
+          self.data.append(temp)
+        }
+        self.tableView.reloadData()
+      }
+    }
   }
   
   private func navigationSet() {
     navigationItem.title = "커뮤니티"
     navigationController?.navigationBar.shadowImage = UIImage()
     navigationController?.navigationBar.barTintColor = .white
+    
+    
+    navigationItem.leftBarButtonItem = UIBarButtonItem(title: "뒤로가기", style: .done, target: self, action: #selector(dismissButtonAction))
+  }
+  
+  @objc private func dismissButtonAction() {
+    presentingViewController?.dismiss(animated: true)
   }
   
   private func configure() {
@@ -51,13 +83,13 @@ class CommunityVC: UIViewController {
 
 extension CommunityVC: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 100
+    return data.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: CommunityCell.identifier, for: indexPath) as? CommunityCell else { fatalError() }
     
-    cell.setting()
+    cell.setting(data: data[indexPath.row])
     
     return cell
   }
