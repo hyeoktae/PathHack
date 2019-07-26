@@ -68,6 +68,7 @@ class MainVC: UIViewController {
   @objc func moveWriteView() {
     
     let quickReportVC = QuickReportVC()
+    quickReportVC.modalPresentationStyle = .overCurrentContext
     present(quickReportVC, animated: true)
   }
   

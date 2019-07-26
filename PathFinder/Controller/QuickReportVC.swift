@@ -18,7 +18,7 @@ class QuickReportVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5)
     setupQuickReportView()
 //    quickReportView.delegate = self
   }
@@ -32,22 +32,22 @@ class QuickReportVC: UIViewController {
   private func startAnimations(isCancel: Bool) {
     if isCancel {
       UIView.animate(withDuration: 0.3) {
-        self.quickReportView.topView.transform = CGAffineTransform(translationX: 0, y: -250)
+        self.quickReportView.topView.transform = CGAffineTransform(translationX: 0, y: -350)
       }
       
       UIView.animate(withDuration: 0.3, animations: {
-        self.quickReportView.bottomImageView.transform = CGAffineTransform(translationX: 0, y: 130)
+        self.quickReportView.bottomView.transform = CGAffineTransform(translationX: 0, y: 130)
       }) { (Bool) in
         self.dismiss(animated: false)
       }
-      
     } else {
       UIView.animate(withDuration: 0.3) {
-        self.quickReportView.topView.transform = CGAffineTransform(translationX: 0, y: 250)
+        self.quickReportView.topView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.midY)
       }
       
       UIView.animate(withDuration: 0.3) {
-        self.quickReportView.bottomImageView.transform = CGAffineTransform(translationX: 0, y: -130)
+        self.quickReportView.bottomView.transform = CGAffineTransform(translationX: 0, y: -250)
+        self.quickReportView.policeCallButton.transform = CGAffineTransform(translationX: 0, y: -250)
       }
     }
   }
