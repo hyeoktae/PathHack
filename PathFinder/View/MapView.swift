@@ -43,12 +43,19 @@ class MapView: UIView {
     for (idx, crime) in allCrimeData.enumerated() {
       let position = CLLocationCoordinate2D(latitude: CLLocationDegrees(crime.postion[0]), longitude: CLLocationDegrees(crime.postion[1]))
       let marker = GMSMarker(position: position)
+      
       marker.iconView = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
       marker.title = crime.type
-      marker.snippet = String("포상금 : \(crime.reward[0])")
+      marker.snippet = String("포상금 : \(crime.reward[0])원")
       marker.map = googleMapView
       marker.userData = idx
       markerArr.append(marker)
+    }
+    
+    for (_, marker) in markerArr.enumerated() {
+      marker.isFlat = true
+      marker.appearAnimation = GMSMarkerAnimation.pop
+      googleMapView.selectedMarker = marker
     }
   }
   
