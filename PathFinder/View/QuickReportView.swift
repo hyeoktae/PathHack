@@ -8,8 +8,12 @@
 
 import UIKit
 
+protocol QuickReportViewDelegate: class {
+  func touchUpCancelButton()
+}
+
 class QuickReportView: UIView {
-  //  var delegate: QuickReportVCDelegate?
+    var delegate: QuickReportViewDelegate?
   
   let topView: UIView = {
     let view = UIView()
@@ -133,17 +137,17 @@ class QuickReportView: UIView {
     super.init(frame: frame)
     
     
-    policeCallButton.layer.cornerRadius = policeCallButton.frame.width / 2
   }
   
   override func layoutSubviews() {
     super.layoutSubviews()
     setupProperties()
     
+    policeCallButton.layer.cornerRadius = 20
   }
   
   @objc private func touchUpCancelButton(_ sender: Any) {
-    //    delegate?.touchUpCancelButton()
+        delegate?.touchUpCancelButton()
   }
   
   private func setupProperties() {
@@ -155,7 +159,7 @@ class QuickReportView: UIView {
     topView.heightAnchor.constraint(equalToConstant: 270).isActive = true
     
     topView.addSubview(topViewText)
-    topViewText.topAnchor.constraint(equalTo: topView.topAnchor, constant: 20).isActive = true
+    topViewText.topAnchor.constraint(equalTo: topView.topAnchor, constant: 50).isActive = true
     topViewText.leadingAnchor.constraint(equalTo: topView.leadingAnchor).isActive = true
     topViewText.trailingAnchor.constraint(equalTo: topView.trailingAnchor).isActive = true
     
