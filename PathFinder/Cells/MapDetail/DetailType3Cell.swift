@@ -28,25 +28,25 @@ class DetailType3Cell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  func setting(data: Reward) {
+  func setting(data: [Int]) {
     titleLabel.text = "포상"
     
-    if data.cash == 0 {
+    if data[0] == 0 {
       cashLabel.text = "    - " + "해당사항 없음"
     } else {
-      cashLabel.text = "    - " + String(data.cash)
+      cashLabel.text = "    - " + String(data[0])
     }
     
-    if data.app == 0 {
+    if data[1] == 0 {
       appLabel.text = "    - " + "해당사항 없음"
     } else {
-      appLabel.text = "    -  " + String(data.app)
+      appLabel.text = "    -  " + String(data[1])
     }
     
-    if data.penalty == 0 {
+    if data[2] == 0 {
       penaltyLabel.text = "    - " + "해당사항 없음"
     } else {
-      penaltyLabel.text = "    -  " + String(data.penalty)
+      penaltyLabel.text = "    -  " + String(data[2])
     }
   }
   
