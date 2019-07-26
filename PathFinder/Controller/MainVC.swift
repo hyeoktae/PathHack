@@ -86,7 +86,7 @@ class MainVC: UIViewController {
   }
   
   func makeViewList() {
-    guard let views = [mapVC, compareFaceVC, quickReportVC, rewordStoreVC, myPageVC] as? [UIViewController] else {
+    guard let views = [mapVC, compareFaceVC, quickReportVC, myPageVC, rewordStoreVC] as? [UIViewController] else {
       return
     }
     

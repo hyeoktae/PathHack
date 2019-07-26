@@ -27,10 +27,10 @@ class DetailType2Cell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  func setting(data: PoliceStation) {
+  func setting(data: [String]) {
     titleLabel.text = "관할 경찰서"
-    nameLabel.text = "    - " + data.name
-    numberLabel.text = "    - " + data.number
+    nameLabel.text = "    - " + data[0]
+    numberLabel.text = "    - " + data[1]
   }
   
   private func configure() {

@@ -9,14 +9,14 @@
 import UIKit
 
 struct CrimeModel {
-  let postion: Position
+  let postion: [CGFloat]
   let location: String
   let type: String
   let date: String
   let state: String
   let caseNumber: String
-  let districtPliceStation: PoliceStation
-  let reward: Reward
+  let districtPliceStation: [String]
+  let reward: [Int]
 }
 
 struct Position {

@@ -45,6 +45,7 @@
 		CF09E90B22EB18B700B43066 /* MyPageFourContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90A22EB18B700B43066 /* MyPageFourContentCell.swift */; };
 		CF09E90E22EB192900B43066 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90D22EB192900B43066 /* Color.swift */; };
 		CF09E91022EB277A00B43066 /* GoogleMapPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */; };
+		CF09E91222EB462100B43066 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E91122EB462100B43066 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		CF09E90A22EB18B700B43066 /* MyPageFourContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageFourContentCell.swift; sourceTree = "<group>"; };
 		CF09E90D22EB192900B43066 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapPinView.swift; sourceTree = "<group>"; };
+		CF09E91122EB462100B43066 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		D6DAF62212DC22FC5BBD7E33 /* Pods_PathFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PathFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C5F767E0F488B1D750D645 /* Pods-PathFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.release.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				CF09E90D22EB192900B43066 /* Color.swift */,
+				CF09E91122EB462100B43066 /* DataProvider.swift */,
 			);
 			path = Utill;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				CF09E8E722EAED6500B43066 /* CompareFaceView.swift in Sources */,
 				CF09E90B22EB18B700B43066 /* MyPageFourContentCell.swift in Sources */,
 				CF09E90422EB184C00B43066 /* MyPageOneContentCell.swift in Sources */,
+				CF09E91222EB462100B43066 /* DataProvider.swift in Sources */,
 				CF09E8D122E9FB0100B43066 /* APICenter.swift in Sources */,
 				CF09E90222EB183D00B43066 /* MyPageHeaderCell.swift in Sources */,
 				CF09E8D822E9FB2900B43066 /* UpsData.swift in Sources */,
@@ -602,7 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZLN97H98PA;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZLN97H98PA;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (

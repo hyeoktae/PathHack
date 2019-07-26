@@ -9,7 +9,15 @@
 import UIKit
 import GoogleMaps
 
+protocol MapViewDelegate: class {
+  func touchUpMarker(_ crimeData: CrimeModel, _ documentValue: String)
+}
+
 class MapView: UIView {
+  var delegate: MapViewDelegate?
+  
+  private let shared = DataProvider.shared
+  private var markerArr: [GMSMarker] = []
   
   private var googleMapView: GMSMapView = {
     let camera = GMSCameraPosition.camera(withLatitude: 35.154091, longitude: 129.0553, zoom: 18)
@@ -21,34 +29,27 @@ class MapView: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-
+    
+    googleMapView.delegate = self
     setupGoogleMapView()
-    
-    let position = CLLocationCoordinate2D(latitude: 35.154091, longitude: 129.0553)
-    let marker = GMSMarker(position: position)
-    marker.title = "Hello World"
-    let view = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
-    marker.iconView = view
-    marker.map = googleMapView
-    
-    let position2 = CLLocationCoordinate2D(latitude: 35.233968, longitude: 129.080685)
-    let marker2 = GMSMarker(position: position2)
-    marker2.title = "Hello World"
-    let view2 = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
-    marker2.iconView = view2
-    marker2.map = googleMapView
-    
-    let position3 = CLLocationCoordinate2D(latitude: 35.160321, longitude: 129.055334)
-    let marker3 = GMSMarker(position: position3)
-    marker3.title = "Hello World"
-    let view3 = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
-    marker3.iconView = view3
-    marker3.map = googleMapView
   }
   
   override func layoutSubviews() {
     super.layoutSubviews()
     
+  }
+  
+  func configureMapView(_ allCrimeData: [CrimeModel]) {
+    for (idx, crime) in allCrimeData.enumerated() {
+      let position = CLLocationCoordinate2D(latitude: CLLocationDegrees(crime.postion[0]), longitude: CLLocationDegrees(crime.postion[1]))
+      let marker = GMSMarker(position: position)
+      marker.iconView = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+      marker.title = crime.type
+      marker.snippet = String("포상금 : \(crime.reward[0])")
+      marker.map = googleMapView
+      marker.userData = idx
+      markerArr.append(marker)
+    }
   }
   
   private func setupGoogleMapView() {
@@ -61,5 +62,13 @@ class MapView: UIView {
   
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+}
+
+extension MapView: GMSMapViewDelegate {
+  func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+    guard let crimeDataIndex = marker.userData as? Int else { return false }
+    delegate?.touchUpMarker(shared.crimeData[crimeDataIndex], shared.crimeDocument[crimeDataIndex])
+    return true
   }
 }

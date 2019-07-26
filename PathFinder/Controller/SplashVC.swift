@@ -8,9 +8,11 @@
 
 import UIKit
 import Firebase
-
+import GoogleMaps
 
 class SplashVC: UIViewController {
+  private let shared = DataProvider.shared
+  
   private var timer: Timer!
   
   private let mainView: UIView = {
@@ -49,7 +51,7 @@ class SplashVC: UIViewController {
     self.view.backgroundColor = UIColor.appColor(.moongCherColor)
     setupProperties()
     
-    timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(startSplash), userInfo: nil, repeats: false)
+    timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(startSplash), userInfo: nil, repeats: false)
   }
   
   override func viewWillLayoutSubviews() {
@@ -74,7 +76,19 @@ class SplashVC: UIViewController {
         print("Error getting documents: \(err)")
       } else {
         for document in querySnapshot!.documents {
-          print("\(document.documentID) => \(document.data())")
+          self.shared.crimeDocument.append(document.documentID)
+
+          let data = CrimeModel(
+            postion: document["position"] as! [CGFloat],
+            location: document["location"] as! String,
+            type: document["type"] as! String,
+            date: document["date"] as! String,
+            state: document["state"] as! String,
+            caseNumber: document["caseNumber"] as! String,
+            districtPliceStation: document["districtPliceStation"] as! [String],
+            reward: document["reward"] as! [Int]
+          )
+          self.shared.crimeData.append(data)
         }
         let mainVC = MainVC()
         self.present(mainVC, animated: false)
