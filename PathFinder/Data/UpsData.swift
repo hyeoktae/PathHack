@@ -34,3 +34,8 @@ struct Reward {
   let app: Int
   let penalty: Int
 }
+
+struct CommunityModel {
+  let title: String
+  let contents: String
+}

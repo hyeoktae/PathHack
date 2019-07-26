@@ -29,7 +29,7 @@ class CommunityVC: UIViewController {
   
   private func configure() {
     tableView.dataSource = self
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    tableView.register(CommunityCell.self, forCellReuseIdentifier: CommunityCell.identifier)
     view.addSubview(tableView)
   }
   
@@ -55,9 +55,9 @@ extension CommunityVC: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: CommunityCell.identifier, for: indexPath) as? CommunityCell else { fatalError() }
     
-    cell.textLabel?.text = String(indexPath.row)
+    cell.setting()
     
     return cell
   }
