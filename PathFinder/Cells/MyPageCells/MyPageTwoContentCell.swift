@@ -39,7 +39,6 @@ class MyPageTwoContentCell: UITableViewCell {
     label.text = "0"
     label.textAlignment = .right
     label.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
-    label.textColor = UIColor.appColor(.megaBoxColor)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
@@ -80,7 +79,6 @@ class MyPageTwoContentCell: UITableViewCell {
     label.text = "0"
     label.textAlignment = .right
     label.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
-    label.textColor = UIColor.appColor(.megaBoxColor)
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()

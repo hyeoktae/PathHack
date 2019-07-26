@@ -10,7 +10,7 @@ import UIKit
 
 enum AssetsColor {
   // MegaBox Main Color
-  case megaBoxColor
+  case moongCherColor
   
   // Button Color
   case defaultGrayColor
@@ -26,8 +26,8 @@ enum AssetsColor {
 extension UIColor {
   static func appColor(_ name: AssetsColor) -> UIColor {
     switch name {
-    case .megaBoxColor:
-      return #colorLiteral(red: 0.2392156863, green: 0.1215686275, blue: 0.5568627451, alpha: 1)
+    case .moongCherColor:
+      return #colorLiteral(red: 0.5333333333, green: 0.7921568627, blue: 0.8352941176, alpha: 1)
     case .defaultGrayColor:
       return #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     case .selectedCellMintColor:
