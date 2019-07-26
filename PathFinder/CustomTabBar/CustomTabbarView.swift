@@ -21,7 +21,7 @@ class CustomTabbarView: UIView {
   
   let customTabBar: UITabBar = {
     let customTabBar = UITabBar()
-    customTabBar.barTintColor = #colorLiteral(red: 0.6941176471, green: 0.8666666667, blue: 0.8509803922, alpha: 1)
+    customTabBar.barTintColor = UIColor.appColor(.moongCherColor)
     customTabBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     return customTabBar
   }()

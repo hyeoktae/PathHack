@@ -27,18 +27,22 @@ class MapView: UIView {
     let position = CLLocationCoordinate2D(latitude: 35.154091, longitude: 129.0553)
     let marker = GMSMarker(position: position)
     marker.title = "Hello World"
+    let view = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+    marker.iconView = view
     marker.map = googleMapView
     
     let position2 = CLLocationCoordinate2D(latitude: 35.233968, longitude: 129.080685)
     let marker2 = GMSMarker(position: position2)
     marker2.title = "Hello World"
-    
+    let view2 = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+    marker2.iconView = view2
     marker2.map = googleMapView
     
     let position3 = CLLocationCoordinate2D(latitude: 35.160321, longitude: 129.055334)
     let marker3 = GMSMarker(position: position3)
     marker3.title = "Hello World"
-    
+    let view3 = GoogleMapPinView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+    marker3.iconView = view3
     marker3.map = googleMapView
   }
   

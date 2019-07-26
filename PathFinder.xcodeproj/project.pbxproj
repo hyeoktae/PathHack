@@ -167,12 +167,12 @@
 			children = (
 				CF09E8CE22E9FAF400B43066 /* MainView.swift */,
 				CF09E8E222EAED5100B43066 /* MapView.swift */,
+				CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */,
 				CF09E8E422EAED5B00B43066 /* MapDetailView.swift */,
 				CF09E8E622EAED6500B43066 /* CompareFaceView.swift */,
 				CF09E8F122EAF28300B43066 /* QuickReportView.swift */,
 				CF09E8F322EAF29100B43066 /* RewordStoreView.swift */,
 				CF09E8F522EAF29800B43066 /* MyPageView.swift */,
-				CF09E90F22EB277A00B43066 /* GoogleMapPinView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,7 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = PathFinder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = PathFinder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,7 +26,7 @@ class MapVC: UIViewController {
   private func setupGoogleMaps() {
     let guide = view.safeAreaLayoutGuide
     view.addSubview(googleMap)
-    googleMap.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+    googleMap.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
     googleMap.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
     googleMap.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
     googleMap.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true

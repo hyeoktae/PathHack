@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    
+    FirebaseApp.configure()
     
     GMSServices.provideAPIKey("AIzaSyAkwUi_qy_5ygUj5yU4EwTL0pyIEUUh1u0")
     
@@ -25,9 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.backgroundColor = .white
     window?.rootViewController = SplashVC()
     window?.makeKeyAndVisible()
-    
-    FirebaseApp.configure()
-    
     
     return true
   }
