@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		42B4564BCB24B5D9033E80E2 /* Pods_PathFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DAF62212DC22FC5BBD7E33 /* Pods_PathFinder.framework */; };
+		4F3832DA22EB363500A2EE99 /* DetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832D922EB363500A2EE99 /* DetailMapCell.swift */; };
+		4F3832DC22EB365600A2EE99 /* DetailType1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832DB22EB365600A2EE99 /* DetailType1Cell.swift */; };
+		4F3832DE22EB366900A2EE99 /* DetailType2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832DD22EB366900A2EE99 /* DetailType2Cell.swift */; };
+		4F3832E022EB368400A2EE99 /* DetailType3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832DF22EB368400A2EE99 /* DetailType3Cell.swift */; };
+		4F3832E222EB36B000A2EE99 /* DetailCommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E122EB36B000A2EE99 /* DetailCommunityCell.swift */; };
+		4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */; };
 		CF09E8B622E9F10900B43066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B522E9F10900B43066 /* AppDelegate.swift */; };
 		CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B722E9F10900B43066 /* MainVC.swift */; };
 		CF09E8BD22E9F10A00B43066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF09E8BC22E9F10A00B43066 /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F3832D922EB363500A2EE99 /* DetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapCell.swift; sourceTree = "<group>"; };
+		4F3832DB22EB365600A2EE99 /* DetailType1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailType1Cell.swift; sourceTree = "<group>"; };
+		4F3832DD22EB366900A2EE99 /* DetailType2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailType2Cell.swift; sourceTree = "<group>"; };
+		4F3832DF22EB368400A2EE99 /* DetailType3Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailType3Cell.swift; sourceTree = "<group>"; };
+		4F3832E122EB36B000A2EE99 /* DetailCommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommunityCell.swift; sourceTree = "<group>"; };
+		4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		980CD651A48912706F09417D /* Pods-PathFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.debug.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		CF09E8B222E9F10900B43066 /* PathFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF09E8B522E9F10900B43066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +110,18 @@
 				D6DAF62212DC22FC5BBD7E33 /* Pods_PathFinder.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F3832D822EB35ED00A2EE99 /* MapDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4F3832D922EB363500A2EE99 /* DetailMapCell.swift */,
+				4F3832DB22EB365600A2EE99 /* DetailType1Cell.swift */,
+				4F3832DD22EB366900A2EE99 /* DetailType2Cell.swift */,
+				4F3832DF22EB368400A2EE99 /* DetailType3Cell.swift */,
+				4F3832E122EB36B000A2EE99 /* DetailCommunityCell.swift */,
+			);
+			path = MapDetail;
 			sourceTree = "<group>";
 		};
 		783CBA7A454023497B4549E3 /* Pods */ = {
@@ -188,6 +212,7 @@
 				CF09E8EB22EAF1B300B43066 /* QuickReportVC.swift */,
 				CF09E8ED22EAF24C00B43066 /* RewordStoreVC.swift */,
 				CF09E8EF22EAF26500B43066 /* MyPageVC.swift */,
+				4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +238,7 @@
 		CF09E8F922EB178B00B43066 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4F3832D822EB35ED00A2EE99 /* MapDetail */,
 				CF09E90022EB181300B43066 /* MyPageCells */,
 			);
 			path = Cells;
@@ -405,11 +431,15 @@
 			files = (
 				CF09E8F022EAF26500B43066 /* MyPageVC.swift in Sources */,
 				CF09E8F422EAF29100B43066 /* RewordStoreView.swift in Sources */,
+				4F3832DA22EB363500A2EE99 /* DetailMapCell.swift in Sources */,
+				4F3832E222EB36B000A2EE99 /* DetailCommunityCell.swift in Sources */,
 				CF09E91022EB277A00B43066 /* GoogleMapPinView.swift in Sources */,
 				CF09E8D422E9FB1600B43066 /* TassData.swift in Sources */,
 				CF09E8E122EAED4300B43066 /* CompareFaceVC.swift in Sources */,
+				4F3832DE22EB366900A2EE99 /* DetailType2Cell.swift in Sources */,
 				CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */,
 				CF09E90922EB18AE00B43066 /* MyPageThreeContentCell.swift in Sources */,
+				4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */,
 				CF09E90722EB18A300B43066 /* MyPageTwoContentCell.swift in Sources */,
 				CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */,
 				CF09E8E322EAED5100B43066 /* MapView.swift in Sources */,
@@ -425,7 +455,9 @@
 				CF09E8CF22E9FAF400B43066 /* MainView.swift in Sources */,
 				CF09E8DF22EAED3200B43066 /* MapDetailVC.swift in Sources */,
 				CF09E8DD22EAED2500B43066 /* MapVC.swift in Sources */,
+				4F3832E022EB368400A2EE99 /* DetailType3Cell.swift in Sources */,
 				CF09E8B622E9F10900B43066 /* AppDelegate.swift in Sources */,
+				4F3832DC22EB365600A2EE99 /* DetailType1Cell.swift in Sources */,
 				CF09E8EA22EAF12200B43066 /* CustomTabbarView.swift in Sources */,
 				CF09E8F622EAF29800B43066 /* MyPageView.swift in Sources */,
 				CF09E8E522EAED5B00B43066 /* MapDetailView.swift in Sources */,
@@ -570,7 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = ZLN97H98PA;
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,7 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = ZLN97H98PA;
 				INFOPLIST_FILE = PathFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
