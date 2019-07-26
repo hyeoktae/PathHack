@@ -14,6 +14,8 @@
 		4F3832E022EB368400A2EE99 /* DetailType3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832DF22EB368400A2EE99 /* DetailType3Cell.swift */; };
 		4F3832E222EB36B000A2EE99 /* DetailCommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E122EB36B000A2EE99 /* DetailCommunityCell.swift */; };
 		4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */; };
+		4F3832E622EB3BD900A2EE99 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */; };
+		4F3832EB22EB586000A2EE99 /* RewardStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */; };
 		CF09E8B622E9F10900B43066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B522E9F10900B43066 /* AppDelegate.swift */; };
 		CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09E8B722E9F10900B43066 /* MainVC.swift */; };
 		CF09E8BD22E9F10A00B43066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF09E8BC22E9F10A00B43066 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		4F3832DF22EB368400A2EE99 /* DetailType3Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailType3Cell.swift; sourceTree = "<group>"; };
 		4F3832E122EB36B000A2EE99 /* DetailCommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommunityCell.swift; sourceTree = "<group>"; };
 		4F3832E322EB37AD00A2EE99 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
+		4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
+		4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStoreCell.swift; sourceTree = "<group>"; };
 		980CD651A48912706F09417D /* Pods-PathFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PathFinder.debug.xcconfig"; path = "Target Support Files/Pods-PathFinder/Pods-PathFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		CF09E8B222E9F10900B43066 /* PathFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF09E8B522E9F10900B43066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,8 +124,17 @@
 				4F3832DD22EB366900A2EE99 /* DetailType2Cell.swift */,
 				4F3832DF22EB368400A2EE99 /* DetailType3Cell.swift */,
 				4F3832E122EB36B000A2EE99 /* DetailCommunityCell.swift */,
+				4F3832E522EB3BD900A2EE99 /* CommunityCell.swift */,
 			);
 			path = MapDetail;
+			sourceTree = "<group>";
+		};
+		4F3832E922EB582200A2EE99 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				4F3832EA22EB586000A2EE99 /* RewardStoreCell.swift */,
+			);
+			path = Reward;
 			sourceTree = "<group>";
 		};
 		783CBA7A454023497B4549E3 /* Pods */ = {
@@ -238,6 +251,7 @@
 		CF09E8F922EB178B00B43066 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4F3832E922EB582200A2EE99 /* Reward */,
 				4F3832D822EB35ED00A2EE99 /* MapDetail */,
 				CF09E90022EB181300B43066 /* MyPageCells */,
 			);
@@ -431,6 +445,7 @@
 			files = (
 				CF09E8F022EAF26500B43066 /* MyPageVC.swift in Sources */,
 				CF09E8F422EAF29100B43066 /* RewordStoreView.swift in Sources */,
+				4F3832EB22EB586000A2EE99 /* RewardStoreCell.swift in Sources */,
 				4F3832DA22EB363500A2EE99 /* DetailMapCell.swift in Sources */,
 				4F3832E222EB36B000A2EE99 /* DetailCommunityCell.swift in Sources */,
 				CF09E91022EB277A00B43066 /* GoogleMapPinView.swift in Sources */,
@@ -440,6 +455,7 @@
 				CF09E8B822E9F10900B43066 /* MainVC.swift in Sources */,
 				CF09E90922EB18AE00B43066 /* MyPageThreeContentCell.swift in Sources */,
 				4F3832E422EB37AD00A2EE99 /* CommunityVC.swift in Sources */,
+				4F3832E622EB3BD900A2EE99 /* CommunityCell.swift in Sources */,
 				CF09E90722EB18A300B43066 /* MyPageTwoContentCell.swift in Sources */,
 				CF09E8F222EAF28300B43066 /* QuickReportView.swift in Sources */,
 				CF09E8E322EAED5100B43066 /* MapView.swift in Sources */,
