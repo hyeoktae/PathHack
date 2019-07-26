@@ -9,8 +9,14 @@
 import UIKit
 
 class MapDetailVC: UIViewController {
-  
+  private let shared = DataProvider.shared
   var documentID: String = ""
+  
+  private let googleMap: MapDetailView = {
+    let mapView = MapDetailView()
+    mapView.translatesAutoresizingMaskIntoConstraints = false
+    return mapView
+  }()
   
   private let tableView = UITableView()
   
@@ -19,10 +25,10 @@ class MapDetailVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
     navigationSet()
     configure()
     autoLayout()
+    googleMap.configureGoogleMapPosition(data)
   }
   
   private func navigationSet() {
@@ -39,7 +45,6 @@ class MapDetailVC: UIViewController {
   
   private func configure() {
     view.backgroundColor = .white
-    
     
     tableView.separatorStyle = .none
     tableView.dataSource = self
@@ -58,8 +63,14 @@ class MapDetailVC: UIViewController {
   private func autoLayout() {
     let guide = view.safeAreaLayoutGuide
     
+    view.addSubview(googleMap)
+    googleMap.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+    googleMap.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
+    googleMap.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
+    googleMap.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height / 3).isActive = true
+    
     tableView.translatesAutoresizingMaskIntoConstraints = false
-    tableView.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+    tableView.topAnchor.constraint(equalTo: googleMap.bottomAnchor).isActive = true
     tableView.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
     tableView.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
     tableView.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
