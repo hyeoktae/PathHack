@@ -10,6 +10,8 @@ import UIKit
 
 class MapDetailVC: UIViewController {
   
+  var documentID: String = ""
+  
   private let tableView = UITableView()
   
   var data: CrimeModel!
