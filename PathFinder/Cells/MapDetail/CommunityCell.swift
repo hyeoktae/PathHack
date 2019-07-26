@@ -26,8 +26,9 @@ class CommunityCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  func setting() {
-    
+  func setting(data: CommunityModel) {
+    titleLabel.text = data.title
+    contentsLabel.text = data.contents
   }
   
   private func configure() {
